@@ -2,7 +2,6 @@
 
 **Multi-system intelligence platform** — maps how complex systems interact so organizations can see connections, model cascades, and navigate a world defined by intersecting forces.
 
-- **Stage:** Pre-seed  
 - **Origin:** AI × Systems Theory  
 - **North star:** From hours of analyst work across fragmented tools → a single query that surfaces cross-system insight in real time.
 

@@ -26,6 +26,19 @@ export default function NetworkPage() {
       <div className="mt-10">
         <NetworkGraph nodes={state.nodes} connections={state.connections} />
       </div>
+      <ul className="mt-4 grid gap-2 sm:grid-cols-2 md:hidden">
+        {state.nodes.map((node) => (
+          <li key={node.id}>
+            <Link
+              href={`/nodes/${node.id}`}
+              className="flex items-center justify-between rounded-xl border border-white/[0.07] px-3 py-2 text-sm"
+            >
+              <span className="text-star">{node.name}</span>
+              <span className="font-mono text-[10px] uppercase text-star-mute">{node.kind}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         <Stat label="Nodes" value={String(state.nodes.length)} />

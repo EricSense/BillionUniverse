@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #141413;
+  --ink-soft: #2c2b28;
+  --paper: #f3efe6;
+  --paper-2: #e8e2d4;
+  --rule: #d4cebf;
+  --mist: #6f6b60;
+  --accent: #0f5c4c;
+  --accent-2: #0b4539;
+  --warn: #9a3b1c;
+  --hq: #101012;
+  --hq-panel: #18181c;
+  --hq-raised: #202026;
+  --hq-line: rgba(243, 239, 230, 0.1);
+  --hq-text: #f2efe6;
+  --hq-mist: #9a9588;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-rule: var(--rule);
+  --color-mist: var(--mist);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-warn: var(--warn);
+  --color-hq: var(--hq);
+  --color-hq-panel: var(--hq-panel);
+  --color-hq-raised: var(--hq-raised);
+  --color-hq-line: var(--hq-line);
+  --color-hq-text: var(--hq-text);
+  --color-hq-mist: var(--hq-mist);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-newsreader);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.font-display {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.hairline {
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
+
+.hq-hairline {
+  box-shadow: inset 0 0 0 1px var(--hq-line);
+}

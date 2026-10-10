@@ -1,8 +1,8 @@
 # Billion Universe
 
-A shared world a person can enter. Not a capture network, not a company dashboard.
+Place-layer infrastructure company. Not a social world. Not a capture mill.
 
-- Person + plot: `lib/person.ts`, `lib/hash.ts`
-- Districts and plan: `lib/world.ts`
-- Thesis: `lib/copy.ts`
-- Primary loop: Arrive → Room → Atlas → District
+- Mission: `lib/copy.ts`
+- Fleet + kit: `lib/nodes.ts`
+- Console telemetry: `lib/telemetry.ts`
+- Product loop: `/` → `/node` → `/fleet` → `/stack`

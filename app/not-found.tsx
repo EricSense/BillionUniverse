@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { Shell } from "@/components/Shell";
+import { Chrome } from "@/components/Chrome";
 
 export default function NotFound() {
   return (
-    <Shell>
+    <Chrome>
       <div className="mx-auto max-w-xl px-5 py-24">
-        <p className="text-lamp">Unmapped</p>
-        <h1 className="serif mt-2 text-4xl">This plot is empty.</h1>
-        <Link href="/atlas" className="mt-6 inline-block text-sm text-lamp">
-          Back to the atlas
+        <p className="mono text-heat">NO SITE</p>
+        <h1 className="mt-2 text-4xl font-medium">This plot is not a Node yet.</h1>
+        <Link href="/fleet" className="mt-6 inline-block text-sm text-heat">
+          Fleet
         </Link>
       </div>
-    </Shell>
+    </Chrome>
   );
 }

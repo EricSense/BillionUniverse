@@ -1,9 +1,9 @@
-export function Mark({ className = "h-7 w-7" }: { className?: string }) {
+export function Mark({ className = "h-6 w-6" }: { className?: string }) {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden>
-      <rect width="32" height="32" rx="16" fill="#07080c" />
-      <circle cx="16" cy="16" r="11" fill="none" stroke="#e8c07a" strokeWidth="1.3" />
-      <circle cx="20" cy="13" r="2.2" fill="#e8c07a" />
+      <rect width="32" height="32" fill="#050506" />
+      <rect x="8" y="20" width="16" height="4" fill="#ecece8" />
+      <rect x="14" y="8" width="4" height="12" fill="#ff4d2e" />
     </svg>
   );
 }

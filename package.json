@@ -1,8 +1,8 @@
 {
   "name": "billion-universe",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "One world. A billion lives. You have a place in it.",
+  "description": "The place layer. SpaceX makes the universe reachable. We make it inhabitable.",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

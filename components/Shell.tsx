@@ -2,9 +2,11 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Mark } from "./Mark";
 import { DISTRICTS } from "@/lib/world";
+import { readPerson } from "@/lib/person";
 
 const LINKS = [
   { href: "/room", label: "Room" },
@@ -14,6 +16,10 @@ const LINKS = [
 
 export function Shell({ children }: { children: ReactNode }) {
   const path = usePathname();
+  const [claimed, setClaimed] = useState(false);
+  useEffect(() => {
+    setClaimed(Boolean(readPerson()));
+  }, [path]);
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 border-b border-line/80 bg-void/85 backdrop-blur">
@@ -33,8 +39,11 @@ export function Shell({ children }: { children: ReactNode }) {
               </Link>
             ))}
           </nav>
-          <Link href="/arrive" className="ml-auto bg-lamp px-3 py-1.5 text-[13px] text-void">
-            Claim a room
+          <Link
+            href={claimed ? "/room" : "/arrive"}
+            className="ml-auto bg-lamp px-3 py-1.5 text-[13px] text-void"
+          >
+            {claimed ? "Your room" : "Claim a room"}
           </Link>
         </div>
         <nav className="flex gap-4 overflow-x-auto border-t border-line px-5 py-2 text-[12px] text-mist md:hidden">

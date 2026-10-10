@@ -1,24 +1,16 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Instrument_Serif, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Fraunces, Figtree } from "next/font/google";
 import "./globals.css";
 
-const serif = Instrument_Serif({
-  weight: "400",
+const serif = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
 });
 
-const sans = IBM_Plex_Sans({
-  weight: ["400", "500"],
+const sans = Figtree({
   subsets: ["latin"],
   variable: "--font-sans",
-});
-
-const mono = IBM_Plex_Mono({
-  weight: ["400", "500"],
-  subsets: ["latin"],
-  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -26,13 +18,12 @@ export const metadata: Metadata = {
     default: "Billion Universe",
     template: "%s · Billion Universe",
   },
-  description:
-    "Physical reality-capture network for training world models and robots. Warehouses, retail floors, and job sites turned into structured universes.",
+  description: "One world. A billion lives. You have a place in it.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );

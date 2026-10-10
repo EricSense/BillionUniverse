@@ -1,25 +1,19 @@
 {
   "name": "billion-universe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "Physical reality-capture network for training world models and robots.",
+  "description": "One world. A billion lives. You have a place in it.",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "bu": "tsx pipeline/cli.ts"
+    "test": "vitest run"
   },
   "dependencies": {
-    "@react-three/drei": "^10.7.6",
-    "@react-three/fiber": "^9.4.0",
     "next": "^15.5.4",
     "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "three": "^0.180.0",
-    "zod": "^3.25.76"
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
@@ -27,11 +21,9 @@
     "@types/node": "^22.18.6",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
-    "@types/three": "^0.180.0",
     "eslint": "^9.35.0",
     "eslint-config-next": "^15.5.4",
     "tailwindcss": "^4.1.13",
-    "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },

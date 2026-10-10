@@ -1,9 +1,8 @@
 # Billion Universe
 
-Physical reality-capture network for world models and robots.
+A shared world a person can enter. Not a capture network, not a company dashboard.
 
-- Dataset format: `lib/schema.ts` (Universe Bundle UB-01)
-- Capture → process pipeline: `lib/pipeline/`
-- CLI: `npm run bu -- <synth|process|validate|kit>`
-- Catalog is generated from the synthesizer so the site, tests, and CLI share one scene model.
-- Coordinate system: meters, Z-up, origin at the southwest finished-floor corner.
+- Person + plot: `lib/person.ts`, `lib/hash.ts`
+- Districts and plan: `lib/world.ts`
+- Thesis: `lib/copy.ts`
+- Primary loop: Arrive → Room → Atlas → District

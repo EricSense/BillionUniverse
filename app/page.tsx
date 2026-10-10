@@ -1,10 +1,5 @@
-import { Chrome } from "@/components/Chrome";
-import { Landing } from "@/components/landing/Landing";
+import { Gate } from "@/components/Gate";
 
 export default function Page() {
-  return (
-    <Chrome>
-      <Landing />
-    </Chrome>
-  );
+  return <Gate />;
 }

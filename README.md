@@ -1,21 +1,14 @@
 # Billion Universe
 
-Make a universe that can hold a billion lives.
+The world is already being powered by connectivity, space, compute, satellites, telecom, energy, chips, and superintelligence.
 
-SpaceX makes the universe reachable. Starlink makes it connected. Billion Universe builds the **place layer**: Nodes that turn ground into inhabited, operable sites — cheap enough to copy, like a Falcon, like a dish.
+Those are engines.
 
-The first product is Node 1 plus this console. Remote yards, camps, and pads pay now. The same article later stands on habitats. The universe is what you get when the hundredth Node is boring.
+Billion Universe is what they were for: a universe that can hold a billion lives — human and otherwise. Not a product. Not codeable. The destination of the stack.
+
+When it exists, even the intelligence that builds websites is not a vendor. It is in the universe.
 
 ```bash
 npm install
-npm test
 npm run dev
 ```
-
-| Surface | Path |
-| --- | --- |
-| Mission | `/` |
-| Live console | `/node` |
-| Fleet | `/fleet` |
-| Kit | `/stack` |
-| 90 days | `/plan` |

@@ -2,34 +2,19 @@
 
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-mono), ui-monospace, monospace;
-  --color-void: #050506;
-  --color-ink: #0c0c0e;
-  --color-panel: #121214;
-  --color-line: #26262b;
-  --color-mist: #8b8b93;
-  --color-paper: #ecece8;
-  --color-heat: #ff4d2e;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  --color-void: #050505;
+  --color-paper: #e8e4d8;
+  --color-mute: #8a8678;
 }
 
 html,
 body {
   background: var(--color-void);
   color: var(--color-paper);
-  font-family: var(--font-sans);
   min-height: 100%;
 }
 
-::selection {
-  background: var(--color-heat);
-  color: #fff;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.mono {
-  font-family: var(--font-mono);
+.serif {
+  font-family: var(--font-serif);
 }

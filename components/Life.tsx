@@ -12,13 +12,11 @@ import {
 
 export function Life() {
   const [life, setLife] = useState<LifeRecord | null>(null);
-  const [ready, setReady] = useState(false);
   const [name, setName] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
     setLife(parseLife(window.localStorage.getItem(STORAGE_KEY)));
-    setReady(true);
   }, []);
 
   function enter(event: FormEvent) {
@@ -37,10 +35,6 @@ export function Life() {
     window.localStorage.removeItem(STORAGE_KEY);
     setLife(null);
     setName("");
-  }
-
-  if (!ready) {
-    return <div className="h-40" />;
   }
 
   if (life) {

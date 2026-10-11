@@ -2,7 +2,7 @@
   "name": "billion-universe",
   "version": "1.0.0",
   "private": true,
-  "description": "BillionUniverse — from one core to a billion.",
+  "description": "BillionUniverse — the universe a billion lives share.",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

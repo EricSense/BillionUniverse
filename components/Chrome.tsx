@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV } from "@/lib/brand";
+import { COMPANY, NAV } from "@/lib/brand";
 import { Lockup } from "./Mark";
 
 export function Chrome({ children }: { children: React.ReactNode }) {
@@ -23,7 +23,7 @@ export function Chrome({ children }: { children: React.ReactNode }) {
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-8 text-[12px] tracking-[0.16em] text-mute uppercase">
           <span>BillionUniverse</span>
-          <span>From one core to a billion</span>
+          <span>{COMPANY.tag}</span>
         </div>
       </footer>
     </div>

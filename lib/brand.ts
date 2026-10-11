@@ -49,3 +49,11 @@ export const NAV = [
   { href: "/system", label: "System" },
   { href: "/scale", label: "Scale" },
 ] as const;
+
+/** What the company makes. `tag` is the ≤50-character company line. */
+export const COMPANY = {
+  tag: "One identity scaled to a billion lives",
+  make: "BillionUniverse — one system a billion people can share.",
+  product:
+    "The product is the core and the rings it can hold. A single origin of identity, then the first orbit of people and work bound to it, then every domain that origin can inhabit without becoming a different product, then radius: enough orbits that a billion lives share one identity. It does not ship a suite of apps. It stays one thing as it grows.",
+} as const;

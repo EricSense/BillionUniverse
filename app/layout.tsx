@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     default: "BillionUniverse",
     template: "%s · BillionUniverse",
   },
-  description: "From one core to a billion. BillionUniverse.",
+  description: "One identity scaled to a billion lives. BillionUniverse.",
   openGraph: {
     title: "BillionUniverse",
-    description: "From one core to a billion.",
+    description: "One identity scaled to a billion lives.",
     images: ["/brand/logo.jpg"],
   },
 };

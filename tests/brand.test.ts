@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { BRAND, COLORS, LAYERS, NAV } from "../lib/brand";
+import { BRAND, COLORS, COMPANY, LAYERS, NAV } from "../lib/brand";
 
 describe("BillionUniverse brand", () => {
   it("is one word", () => {
@@ -27,5 +27,12 @@ describe("BillionUniverse brand", () => {
 
   it("navigates the brand, not a product", () => {
     expect(NAV.map((item) => item.href)).toEqual(["/", "/system", "/scale"]);
+  });
+
+  it("describes the company in 50 characters or less", () => {
+    expect(COMPANY.tag.length).toBeGreaterThan(0);
+    expect(COMPANY.tag.length).toBeLessThanOrEqual(50);
+    expect(COMPANY.make.startsWith("BillionUniverse")).toBe(true);
+    expect(COMPANY.product.length).toBeGreaterThan(80);
   });
 });

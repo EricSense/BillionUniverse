@@ -1,7 +1,7 @@
 import { Chrome } from "@/components/Chrome";
 import { Field } from "@/components/Field";
 import { Lockup } from "@/components/Mark";
-import { LAYERS } from "@/lib/brand";
+import { COMPANY, LAYERS } from "@/lib/brand";
 
 export default function Home() {
   return (
@@ -14,8 +14,20 @@ export default function Home() {
             textClass="text-[2.05rem] sm:text-[3.15rem] tracking-[-0.03em] text-ink"
           />
           <p className="mt-10 font-display text-sm tracking-[0.28em] text-mute uppercase">
-            From one core to a billion
+            {COMPANY.tag}
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div>
+            <p className="text-[11px] tracking-[0.22em] text-ring uppercase">Product</p>
+            <h2 className="mt-3 font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              {COMPANY.make}
+            </h2>
+          </div>
+          <p className="max-w-xl text-[17px] leading-relaxed text-mute">{COMPANY.product}</p>
         </div>
       </section>
 
